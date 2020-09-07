@@ -1,0 +1,332 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ededed;
+}
+/*topo - faixabranca - menu*/
+.header_shadow {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .2);
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+/*menu hamburger*/
+.burger {
+    width: 40px;
+    height: 4px;
+    background: #757575;
+    font-size: 0;
+    position: relative;
+    border-radius: 5px;
+    top: 21px;
+    left: 4px;
+}
+.burger::before {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: #757575;
+    position: absolute;
+    top: -10px;
+    border-radius: 5px;
+}
+
+.burger::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: #757575;
+    position: absolute;
+    top: 10px;
+    border-radius: 5px;
+}
+/*menu*/
+nav a {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 50px;
+    color: #64afbc;
+    text-decoration: none;
+    transition: transform 200ms ease;
+    padding-right: 20px;
+}
+a:link
+    {
+    text-decoration:none;
+}
+nav a:hover {
+    transform: translate(0, -5px);
+    color: #757575;
+}
+/*logo da barra de cima*/
+.logo-principal {
+    width: 80%;
+}
+/*retira a barra de rolagem horizontal*/
+html {
+    overflow-x: hidden;
+}
+/*sessão inicial onde tem o texto de apresentação*/
+.incial-row {
+    padding-top: 115px;
+}
+.row {
+    margin: 0;
+}
+.card {
+    padding: 0;
+}
+.Subtitulos {
+    color: #757575;
+    text-transform: uppercase;
+}
+.about-us-text {
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #757575;
+}
+.about-text {
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/*botão de volta ao topo*/
+#myBtn {
+display: none; 
+font-size: 2em;
+position: fixed; 
+bottom: 20px; 
+right: 30px; 
+z-index: 99; 
+border: none; 
+outline: none; 
+background-color: rgba(0, 0, 0, 0.5); 
+color: white; 
+cursor: pointer; 
+padding: 15px; 
+border-radius: 10px; 
+-webkit-transition: color 0.5s;
+transition: color 0.5s;
+}
+#myBtn:hover {
+color: #1a1a1a;
+}
+/*caixas onde tem os conteúdos*/
+.content-card {
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 70px 0px 30px 0px;  
+}
+/*flip card*/
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  color: #7f7d7e;
+}
+.card-title {
+    font-size: 16px;
+}
+.card-body p {
+    color: #7f7d7e;
+    font-size: 13px;
+    line-height: 20px;
+}
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+  
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+.hora {
+    line-height: 30px;
+}
+/*fotos profissionais*/
+.fotoprof {
+    width: 202px;
+    height: 202px;
+    margin: 10px auto 150px auto;
+}
+.fotoprof img {
+    border-radius: 100px;
+}
+.fotoprof h5 {
+    font-size: 16px;
+    padding-top: 20px;
+    color: #757575;
+}
+h6 {
+    font-size: 13px;
+}
+/*ConsultaOnline*/
+#online ul li {
+    list-style: none;
+    line-height: 50px;
+}
+
+/*convênios*/
+#logo_convenio {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0 100px 0; 
+}
+/*footer*/
+#footer_rodape .content-card {
+    background-color: #1a1a1a;
+}
+.rodape, .menu-footer {
+    padding: 40px 50px 0 50px;
+    font-size: 14px;
+}
+.social {
+    padding: 10px 50px 50px 50px;
+}
+.social h4 {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
+}
+.menu-footer {
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+.nome {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+footer p {
+    font-size: 13px;
+    color: #ffffff;
+    text-align: left;
+}
+footer a,
+a:hover,
+a:link {
+    color: #fff;
+}
+footer ul {
+    padding: 0;
+}
+footer li {
+    width: 200px;
+    text-align: left;
+    list-style: none;
+    font-size: 13px;
+    line-height: 25px;
+    color: #fff;
+}
+footer li a {
+    width: 200px;
+    list-style: none;
+    font-size: 13px;
+    line-height: 35px;
+}
+#contatos {
+    width: 120%;
+    padding: 40px 50px 0 50px;
+}
+.form-contact input[type="text"],
+.form-contact input[type="email"] {
+    width: 82%;
+    margin: 0 1% 8px;
+    display: block;
+    float: left;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-contact textarea {
+    display: block;
+    clear: both;
+    width: 82%;
+    margin: 0 1% 20px;
+    height: 90px;
+    padding: 7px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.form-contact input[type='submit'] {
+    float: left;
+    margin-left: 1%;
+    color: #ededed;
+    padding: 0 0 50px 0;
+}
+.copyright-text {
+    width: 900px;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+}
+.sub-footer {
+    border-top: solid 1px rgba(255,255,255,.6);
+    margin-top: 30px;
+    padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+    .social i {
+        padding: 0 21px;
+    }
+    .social h4 {
+        text-align: center;
+    }
+    footer p {
+        padding-left: 50px;
+    }
+    .menu-footer li a {
+        text-align: center;
+        line-height: 20px;
+        width: 82%;
+        margin: 0 30% 8px;
+        display: block;
+        float: left;
+        padding: 4px 10px;
+    }
+    .rodape li {
+        text-align: center;
+        width: 82%;
+        margin: 0 10% 8px;
+        display: block;
+        float: left;
+        padding: 7px 10px;
+    }
+    #contatos {
+        padding: 40px 20px;
+    }
+}
