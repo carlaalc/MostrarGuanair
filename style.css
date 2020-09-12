@@ -197,6 +197,9 @@ color: #1a1a1a;
 h6 {
     font-size: 13px;
 }
+#parceiros {
+    padding: 30px 0;
+}
 /*ConsultaOnline*/
 #online p {
     font-size: 20px;
