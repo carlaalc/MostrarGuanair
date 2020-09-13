@@ -180,6 +180,12 @@ color: #1a1a1a;
 .hora {
     line-height: 30px;
 }
+/*Saiba mais*/
+.saiba-mais {
+    color: #c8cac9;
+    position: relative;
+    padding: -30px 30px;
+}
 /*fotos profissionais*/
 .fotoprof {
     width: 202px;
